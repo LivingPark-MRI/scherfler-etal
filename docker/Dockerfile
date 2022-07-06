@@ -9,5 +9,5 @@ RUN wget https://github.com/spm/spm12/archive/refs/tags/r7771.tar.gz && tar zxvf
     wget https://raw.githubusercontent.com/spm/spm-docker/main/octave/spm12_r7771.patch && patch -p3 -d spm12-r7771 < spm12_r7771.patch &&\
     (cd /spm12-r7771/src && make PLATFORM=octave && make PLATFORM=octave install)
 
-# Add SPM to Octave path
-RUN octave --eval 'addpath("/spm12") ; savepath()'
+# Cleanup and add SPM to Octave path
+RUN rm /r7771.tar.gz && octave --eval 'addpath("/spm12-r7771") ; savepath()'

@@ -4,33 +4,32 @@
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
 matlabbatch{1}.spm.spatial.preproc.channel.vols = {
-                                                   '/home/glatard/code/livingpark/scherfler-etal/image_data/sub-15761/ses-1/anat/sub-15761_ses-1_run-01_T1w.nii,1'
-                                                   '/home/glatard/code/livingpark/scherfler-etal/image_data/sub-3169/ses-1/anat/sub-3169_ses-1_run-01_T1w.nii,1'
+                                                   [IMAGES]
                                                    };
 matlabbatch{1}.spm.spatial.preproc.channel.biasreg = 0.001;
 matlabbatch{1}.spm.spatial.preproc.channel.biasfwhm = 60;
 matlabbatch{1}.spm.spatial.preproc.channel.write = [0 0];
-matlabbatch{1}.spm.spatial.preproc.tissue(1).tpm = {'/home/glatard/software/spm12/tpm/TPM.nii,1'};
+matlabbatch{1}.spm.spatial.preproc.tissue(1).tpm = {'/spm12-r7771/tpm/TPM.nii,1'};
 matlabbatch{1}.spm.spatial.preproc.tissue(1).ngaus = 1;
 matlabbatch{1}.spm.spatial.preproc.tissue(1).native = [1 1];
 matlabbatch{1}.spm.spatial.preproc.tissue(1).warped = [0 0];
-matlabbatch{1}.spm.spatial.preproc.tissue(2).tpm = {'/home/glatard/software/spm12/tpm/TPM.nii,2'};
+matlabbatch{1}.spm.spatial.preproc.tissue(2).tpm = {'/spm12-r7771/tpm/TPM.nii,2'};
 matlabbatch{1}.spm.spatial.preproc.tissue(2).ngaus = 1;
 matlabbatch{1}.spm.spatial.preproc.tissue(2).native = [1 1];
 matlabbatch{1}.spm.spatial.preproc.tissue(2).warped = [0 0];
-matlabbatch{1}.spm.spatial.preproc.tissue(3).tpm = {'/home/glatard/software/spm12/tpm/TPM.nii,3'};
+matlabbatch{1}.spm.spatial.preproc.tissue(3).tpm = {'/spm12-r7771/tpm/TPM.nii,3'};
 matlabbatch{1}.spm.spatial.preproc.tissue(3).ngaus = 2;
 matlabbatch{1}.spm.spatial.preproc.tissue(3).native = [1 1];
 matlabbatch{1}.spm.spatial.preproc.tissue(3).warped = [0 0];
-matlabbatch{1}.spm.spatial.preproc.tissue(4).tpm = {'/home/glatard/software/spm12/tpm/TPM.nii,4'};
+matlabbatch{1}.spm.spatial.preproc.tissue(4).tpm = {'/spm12-r7771/tpm/TPM.nii,4'};
 matlabbatch{1}.spm.spatial.preproc.tissue(4).ngaus = 3;
 matlabbatch{1}.spm.spatial.preproc.tissue(4).native = [1 1];
 matlabbatch{1}.spm.spatial.preproc.tissue(4).warped = [0 0];
-matlabbatch{1}.spm.spatial.preproc.tissue(5).tpm = {'/home/glatard/software/spm12/tpm/TPM.nii,5'};
+matlabbatch{1}.spm.spatial.preproc.tissue(5).tpm = {'/spm12-r7771/tpm/TPM.nii,5'};
 matlabbatch{1}.spm.spatial.preproc.tissue(5).ngaus = 4;
 matlabbatch{1}.spm.spatial.preproc.tissue(5).native = [1 1];
 matlabbatch{1}.spm.spatial.preproc.tissue(5).warped = [0 0];
-matlabbatch{1}.spm.spatial.preproc.tissue(6).tpm = {'/home/glatard/software/spm12/tpm/TPM.nii,6'};
+matlabbatch{1}.spm.spatial.preproc.tissue(6).tpm = {'/spm12-r7771/tpm/TPM.nii,6'};
 matlabbatch{1}.spm.spatial.preproc.tissue(6).ngaus = 2;
 matlabbatch{1}.spm.spatial.preproc.tissue(6).native = [1 1];
 matlabbatch{1}.spm.spatial.preproc.tissue(6).warped = [0 0];
@@ -86,5 +85,5 @@ matlabbatch{3}.spm.tools.dartel.mni_norm.preserve = 1;
 matlabbatch{3}.spm.tools.dartel.mni_norm.fwhm = [4 4 4];
 matlabbatch{4}.spm.util.tvol.matfiles(1) = cfg_dep('Segment: Seg Params', substruct('.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','param', '()',{':'}));
 matlabbatch{4}.spm.util.tvol.tmax = 3;
-matlabbatch{4}.spm.util.tvol.mask = {'/home/glatard/software/spm12/tpm/mask_ICV.nii,1'};
-matlabbatch{4}.spm.util.tvol.outf = 'volumes.txt';
+matlabbatch{4}.spm.util.tvol.mask = {'/spm12-r7771/tpm/mask_ICV.nii,1'};
+matlabbatch{4}.spm.util.tvol.outf = '[VOLUMES_FILE]';

@@ -1,0 +1,9 @@
+nibabel
+nilearn
+matplotlib
+pandas
+ppmi-scrapper
+datalad
+jupyter
+numpy
+boutiques

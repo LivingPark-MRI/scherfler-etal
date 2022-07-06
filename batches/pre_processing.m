@@ -1,9 +1,5 @@
-% List of open inputs
-nrun = X; % enter the number of runs here
-jobfile = {'/home/glatard/code/livingpark/scherfler-etal/batch/pre_processing_job.m'};
-jobs = repmat(jobfile, 1, nrun);
-inputs = cell(0, nrun);
-for crun = 1:nrun
-end
+addpath('/spm12-r7771')
 spm('defaults', 'PET');
-spm_jobman('run', jobs, inputs{:});
+spm_jobman('initcfg');
+[BATCH]
+spm_jobman('run', matlabbatch);
