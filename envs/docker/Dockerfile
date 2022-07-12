@@ -1,4 +1,7 @@
-from fedora:36
+# Use Fedora 34 so that Octave 5.2.0 is installed.
+# In later versions, https://savannah.gnu.org/bugs/?61843 crashes DARTEL.
+# Thanks Guillaume!
+from fedora:34
 
 # Update system and install required packages
 RUN dnf update -y && dnf install -y make octave octave-devel patch redhat-rpm-config tar wget
