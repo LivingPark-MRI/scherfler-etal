@@ -3,8 +3,7 @@
 % spm SPM - SPM12 (7771)
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
-matlabbatch{1}.spm.spatial.preproc.channel.vols = {
-                                                   [IMAGES]
+matlabbatch{1}.spm.spatial.preproc.channel.vols = { [IMAGES]
                                                    };
 matlabbatch{1}.spm.spatial.preproc.channel.biasreg = 0.001;
 matlabbatch{1}.spm.spatial.preproc.channel.biasfwhm = 60;
@@ -83,7 +82,3 @@ matlabbatch{3}.spm.tools.dartel.mni_norm.bb = [NaN NaN NaN
                                                NaN NaN NaN];
 matlabbatch{3}.spm.tools.dartel.mni_norm.preserve = 1;
 matlabbatch{3}.spm.tools.dartel.mni_norm.fwhm = [4 4 4];
-matlabbatch{4}.spm.util.tvol.matfiles(1) = cfg_dep('Segment: Seg Params', substruct('.','val', '{}',{1}, '.','val', '{}',{1}, '.','val', '{}',{1}), substruct('.','param', '()',{':'}));
-matlabbatch{4}.spm.util.tvol.tmax = 3;
-matlabbatch{4}.spm.util.tvol.mask = {'/spm12-r7771/tpm/mask_ICV.nii,1'};
-matlabbatch{4}.spm.util.tvol.outf = '[VOLUMES_FILE]';

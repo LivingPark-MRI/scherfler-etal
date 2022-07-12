@@ -3,7 +3,7 @@
 % spm SPM - SPM12 (7771)
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
-matlabbatch{1}.spm.util.tvol.matfiles = '[SEGMENTATION_FILES]';
+matlabbatch{1}.spm.util.tvol.matfiles = {[SEGMENTATION_FILES]};
 matlabbatch{1}.spm.util.tvol.tmax = 3;
 matlabbatch{1}.spm.util.tvol.mask = {'/spm12-r7771/tpm/mask_ICV.nii,1'};
 matlabbatch{1}.spm.util.tvol.outf = '[VOLUMES_FILE]';
