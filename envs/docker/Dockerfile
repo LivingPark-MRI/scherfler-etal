@@ -4,7 +4,7 @@
 from fedora:34
 
 # Update system and install required packages
-RUN dnf update -y && dnf install -y make octave octave-devel patch redhat-rpm-config tar wget
+RUN dnf update -y && dnf install -y make octave octave-devel patch redhat-rpm-config tar wget xorg-x11-server-Xvfb
 
 # Download, patch and compile SPM
 # Adapted from https://en.wikibooks.org/wiki/SPM/Octave

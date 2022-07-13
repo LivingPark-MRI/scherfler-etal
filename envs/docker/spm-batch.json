@@ -3,7 +3,7 @@
     "description": "Run a batch with SPM12",
     "tool-version": "r7771",
     "schema-version": "0.5",
-    "command-line": "(cd /spm12-r7771 && octave -W [SPM_BATCH_FILE] &>[LOG_FILE])",
+    "command-line": "(Xvfb :99 -nolisten tcp -nolisten unix & export DISPLAY=:99) && (cd /spm12-r7771 && octave -W [SPM_BATCH_FILE] &>[LOG_FILE])",
     "container-image": {
         "image": "glatard/spm-octave-5.2.0",
         "index": "docker://",
