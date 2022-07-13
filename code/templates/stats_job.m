@@ -3,20 +3,18 @@
 % spm SPM - SPM12 (7771)
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
-matlabbatch{1}.spm.stats.factorial_design.dir = {'/home/glatard/code/livingpark/scherfler-etal/batch'};
-matlabbatch{1}.spm.stats.factorial_design.des.t2.scans1 = {'/home/glatard/code/livingpark/scherfler-etal/image_data/sub-15761/ses-1/anat/smwc1sub-15761_ses-1_run-01_T1w.nii,1'};
-matlabbatch{1}.spm.stats.factorial_design.des.t2.scans2 = {'/home/glatard/code/livingpark/scherfler-etal/image_data/sub-3169/ses-1/anat/smwc1sub-3169_ses-1_run-01_T1w.nii,1'};
+matlabbatch{1}.spm.stats.factorial_design.dir = {'[DESIGN_DIR]'};
+matlabbatch{1}.spm.stats.factorial_design.des.t2.scans1 = {[GROUP1_SMWC1_SCANS]};
+matlabbatch{1}.spm.stats.factorial_design.des.t2.scans2 = {[GROUP2_SMWC1_SCANS]};
 matlabbatch{1}.spm.stats.factorial_design.des.t2.dept = 0;
 matlabbatch{1}.spm.stats.factorial_design.des.t2.variance = 1;
 matlabbatch{1}.spm.stats.factorial_design.des.t2.gmsca = 0;
 matlabbatch{1}.spm.stats.factorial_design.des.t2.ancova = 0;
-matlabbatch{1}.spm.stats.factorial_design.cov(1).c = [67
-                                                      79];
+matlabbatch{1}.spm.stats.factorial_design.cov(1).c = [[AGES]];
 matlabbatch{1}.spm.stats.factorial_design.cov(1).cname = 'Age';
 matlabbatch{1}.spm.stats.factorial_design.cov(1).iCFI = 1;
 matlabbatch{1}.spm.stats.factorial_design.cov(1).iCC = 1;
-matlabbatch{1}.spm.stats.factorial_design.cov(2).c = [1.3539066
-                                                      1.5256297];
+matlabbatch{1}.spm.stats.factorial_design.cov(2).c = [[ICVS]];
 matlabbatch{1}.spm.stats.factorial_design.cov(2).cname = 'intra-cranial volume';
 matlabbatch{1}.spm.stats.factorial_design.cov(2).iCFI = 1;
 matlabbatch{1}.spm.stats.factorial_design.cov(2).iCC = 1;
@@ -55,3 +53,4 @@ matlabbatch{4}.spm.stats.results.conspec(2).conjunction = 1;
 matlabbatch{4}.spm.stats.results.conspec(2).mask.none = 1;
 matlabbatch{4}.spm.stats.results.units = 1;
 matlabbatch{4}.spm.stats.results.export{1}.ps = true;
+matlabbatch{4}.spm.stats.results.export{2}.png = true;
