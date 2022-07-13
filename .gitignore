@@ -6,3 +6,5 @@ tmp*.m
 .ppmi_config
 data/*
 image_data/
+code/batches/*.m
+.datalad
