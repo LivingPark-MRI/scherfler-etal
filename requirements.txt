@@ -2,8 +2,9 @@ nibabel
 nilearn
 matplotlib
 pandas
-ppmi-scrapper
+ppmi_downloader
 datalad
 jupyter
 numpy
 boutiques
+livingpark_utils
