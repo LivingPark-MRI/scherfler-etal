@@ -52,5 +52,4 @@ matlabbatch{4}.spm.stats.results.conspec(2).extent = 0;
 matlabbatch{4}.spm.stats.results.conspec(2).conjunction = 1;
 matlabbatch{4}.spm.stats.results.conspec(2).mask.none = 1;
 matlabbatch{4}.spm.stats.results.units = 1;
-matlabbatch{4}.spm.stats.results.export{1}.ps = true;
-matlabbatch{4}.spm.stats.results.export{2}.png = true;
+matlabbatch{4}.spm.stats.results.export{1}.csv = true;
