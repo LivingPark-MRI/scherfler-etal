@@ -9,3 +9,5 @@ image_data/
 code/batches/*.m
 .datalad
 install.log
+.livingpark_config
+.cache

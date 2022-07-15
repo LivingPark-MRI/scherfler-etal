@@ -4,8 +4,8 @@
 % cfg_basicio BasicIO - Unknown
 %-----------------------------------------------------------------------
 matlabbatch{1}.spm.stats.factorial_design.dir = {'[DESIGN_DIR]'};
-matlabbatch{1}.spm.stats.factorial_design.des.t2.scans1 = {[GROUP1_SMWC1_SCANS]};
-matlabbatch{1}.spm.stats.factorial_design.des.t2.scans2 = {[GROUP2_SMWC1_SCANS]};
+matlabbatch{1}.spm.stats.factorial_design.des.t2.scans1 = {[GROUP1_SMWC_SCANS]};
+matlabbatch{1}.spm.stats.factorial_design.des.t2.scans2 = {[GROUP2_SMWC_SCANS]};
 matlabbatch{1}.spm.stats.factorial_design.des.t2.dept = 0;
 matlabbatch{1}.spm.stats.factorial_design.des.t2.variance = 1;
 matlabbatch{1}.spm.stats.factorial_design.des.t2.gmsca = 0;
